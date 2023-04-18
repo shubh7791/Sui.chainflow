@@ -1,0 +1,17 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import * as Solana from "@content/pages/solana-contributions.md";
+---
+
+<Layout title="Solana Contributions">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Solana Contributions</Fragment>
+      <Fragment slot="desc">Let's know more.</Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto prose prose-lg mt-6 max-w-3xl"><Solana.Content /></div>
+  </Container>
+</Layout>
