@@ -169,9 +169,23 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] },
 },
 "pages": {
+"about.md": {
+  id: "about.md",
+  slug: "about",
+  body: string,
+  collection: "pages",
+  data: any
+} & { render(): Render[".md"] },
 "solana-contributions.md": {
   id: "solana-contributions.md",
   slug: "solana-contributions",
+  body: string,
+  collection: "pages",
+  data: any
+} & { render(): Render[".md"] },
+"validator.md": {
+  id: "validator.md",
+  slug: "validator",
   body: string,
   collection: "pages",
   data: any

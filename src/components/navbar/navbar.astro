@@ -38,14 +38,14 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/">
-          <img src="logo.svg" alt="descriptive text" width="50" height="50" />
+          <img src="/logo.svg" alt="descriptive text" width="50" height="50" />
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
         </div>
       </div>
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
+        <ul class="flex flex-col lg:flex-row lg:items-center lg:gap-3">
           {
             menuitems.map((item, index) => (
               <>
@@ -69,6 +69,15 @@ const menuitems = [
               </>
             ))
           }
+          <li class="pt-4 lg:pt-0">
+            <Link
+              href="#"
+              href="https://solanacompass.com/staking#delegating/CAf8jfgqhia5VNrEF4A7Y9VLD3numMq9DVSceq7cPhNY/"
+              target="_blank"
+              rel="noopener">
+              Stake With Us
+            </Link>
+          </li>
         </ul>
       </MenuItems>
     </Astronav>

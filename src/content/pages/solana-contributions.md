@@ -1,9 +1,5 @@
 ## Solana Ecosystem Contributions
 
-### Hero Text
-
-Chainflow has supported Solana from the early days. In addition to running our high-performance validator, we lead initiatives to help make Solana more accessible, secure, and decentralized.
-
 ### Infrastructure:
 
 **Tour De Sol**
