@@ -9,16 +9,6 @@ const videos = [
     url: "https://player.vimeo.com/video/821798063?h=6bd53d7523",
     desc: "Revolutionary Phantom wallet to Stake on Solana.",
   },
-  {
-    title: "Getting Started : Solana DApp Development ",
-    url: "https://player.vimeo.com/video/821798063?h=6bd53d7523",
-    desc: "Get this as a complete course and earn certificate on DApp World",
-  },
-  {
-    title: "Solana Development: Smart Contract Life Cycle High Level",
-    url: "https://player.vimeo.com/video/821798063?h=6bd53d7523",
-    desc: "A quick overview to understand the life cycle of a Solana Smart Contract",
-  },
 ];
 ---
 
@@ -34,7 +24,7 @@ const videos = [
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
       {
         videos.map((item) => (
-          <div>
+          <div class="sm:col-span-2 lg:col-auto lg:col-start-2">
             <div class="aspect-square overflow-hidden bg-gray-100">
               <iframe
                 width="100%"
