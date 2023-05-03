@@ -15,12 +15,20 @@ const videos = [
 <Layout title="Stake">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Stake</Fragment>
+      <Fragment slot="title">Staking on Solana</Fragment>
       <Fragment slot="desc">
-        Start staking by delegating to your favourite validators
+        Secure and decentralize Solana by staking your SOL with Chainflow
       </Fragment>
     </Sectionhead>
 
+    <div>
+      <p class="mt-10 mx-auto max-w-xl text-gray-700 text-center">
+        Solana makes it straightforward for anyone with SOL to help secure and
+        decentralize the network through staking. Check out the videos below to
+        learn more about staking, and how to use popular tools to stake with
+        validators like Chainflow.
+      </p>
+    </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
       {
         videos.map((item) => (
@@ -43,8 +51,9 @@ const videos = [
     </div>
     <div class="mt-10 mx-auto text-center text-gray-300">——</div>
     <p class="mt-10 mx-auto max-w-xl text-gray-700 text-center">
-      If our values resonate with yours, please consider supporting our work
-      across the Solana ecosystem by staking with us.
+      Thousands of stakers trust Chainflow. If our values of inclusivity,
+      equitability, fairness, and decentralization resonate with you, please
+      consider staking with us to support our work across the Solana ecosystem.
     </p>
   </Container>
 </Layout>

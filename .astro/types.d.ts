@@ -139,9 +139,9 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
-"Rewinding-Solana.md": {
-  id: "Rewinding-Solana.md",
-  slug: "rewinding-solana",
+"Rewilding-Solana.md": {
+  id: "Rewilding-Solana.md",
+  slug: "rewilding-solana",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">

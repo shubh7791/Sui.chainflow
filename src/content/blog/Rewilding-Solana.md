@@ -1,6 +1,6 @@
 ---
-title: "Rewinding Solana"
-publishDate: "2023-01-13T16:39:36.050Z"
+title: "Rewilding Solana"
+publishDate: "2023-04-13T16:39:36.050Z"
 image: "https://images.unsplash.com/photo-1660062993695-9c81acfaceeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c29sYW5hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
 author: "Chris Remus"
 tags: [blockchain]
@@ -63,51 +63,3 @@ The Decentralized Exchange (DEX) Orca, for example, has seen [quite a bit of rec
 What does BONK mean in the face of Solana's movement toward a more inclusive and democratic future? Who knows. Some signs suggest that the [winds may already be changing](https://decrypt.co/118545/developers-burn-5-trillion-bonk-as-solana-based-meme-coin-slides) for the token.
 
 Regardless of what happens with BONK, or any single project on Solana, it's clear that a shift is taking place on the network, toward a more community-led spiri . As Solana supporters [since before the network's public launch,](https://twitter.com/ChainflowPOS/status/1224783985152339974) we're excited to do our part to center decentralization in these important next steps.
-
-## Eyes Peeled
-
-Here are a few threads we’ll be keeping our eyes on over the coming weeks:
-
-## Livepeer Integrates with Bundlr for Decentralized Video Storage and Streaming 📺
-
-We've [previously highlighted](https://chainflow.io/the-cosmos-interchain-security-and-the-game-of-chains/) Livepeer (on which we've operated since 2018; find us [here](https://chainflow.io/chainflow-staking-systems/#livepeer)) as a potential player in the future overlap between Crypto and AI. In the present, meanwhile, Livepeer's primary application concerns video transcoding, the process by which streaming video is made viewable in different formats. Given that streaming video is the largest single driver of Web traffic, there's a lot of transcoding going on around the world at any given moment. This is a big opportunity space to work within.
-
-Last week, Livepeer shared some details about their new integration with Bundlr, a decentralized storage platform. Esentially, the integration will leverage Bundlr for the storage of video files, and Livepeer for their transcoding.
-
-This creates an interesting synergy that opens up more of the streaming video stack to blockchain-backed decentralization. We're curious to see how partnerships like this catalyze (or fail to spark) the adoption of more decentralized infrastructure for the Web.
-
-Check out Livepeer's recap of a recent chat with the Bundlr team, here:
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Missed the Space with <a href="https://twitter.com/josh_benaron?ref_src=twsrc%5Etfw">@josh_benaron</a> of <a href="https://twitter.com/BundlrNetwork?ref_src=twsrc%5Etfw">@BundlrNetwork</a>?<br><br>Here’s a summary of the key insights 🧵👇 <a href="https://t.co/RwPBvFd5ZO">https://t.co/RwPBvFd5ZO</a></p>&mdash; Livepeer (@Livepeer) <a href="https://twitter.com/Livepeer/status/1611086374366777345?ref_src=twsrc%5Etfw">January 5, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-## Flow Considers the Onboarding Experience 👩‍👧
-
-Flow is an interestingly consumer-focused blockchain (on which we've operated since genesis in 2020; find us [here](https://chainflow.io/chainflow-staking-systems/#flow)) that powers, among other things, the trading card-like ["NBA Top Shot."](https://nbatopshot.com/) The network is notable, from a decentralization standpoint, for a taking a ["decentralize over time" approach.](https://www.notboring.co/p/flow-the-normie-blockchain)
-
-This, then, feels noteworthy: In a recent piece, the Chief Architect of Flow ponders a "hyrbid" custody model that would allow users to start with a custodial account, then transition to self-custody. You can read the full post, [here.](https://twitter.com/flow_blockchain/status/1611139372694540288)
-
-While, in many cases, the "decentralize over time" approach is a bit of ["Decentralization Theater",](https://chainflow.io/the-layers-of-decentralization/#seeing-the-truth-behind-decentralization-theater) Flow has a track record of actually doing it. Last year, for example, the network finally [launched permissionless smart contracts.](https://twitter.com/flow_blockchain/status/1544396077708636161)
-
-This latest custody proposal is, of course, speculative, but we'll be following along closely. For our part, we're [leading our own research](https://chainflow.io/crypto-onboarding-research/) into onboarding and wallets, and we love to see protocols openly question parts of the crypto user experience that have begun to crystallize around user-unfriendly patterns.
-
-## The Cosmos's Interchain Security Timeline Comes into Focus ⚛️
-
-In our [last update,](https://chainflow.io/the-cosmos-interchain-security-and-the-game-of-chains/) we wrote about the Cosmos's forthcoming Interchain Security (ICS) feature:
-
-> ICS solves [the challenge for new chains of spinning up their own validator sets] in a clever way by simply allowing new chains to run using the validator set of an existing chain. In the official ICS vocabulary, the new network becomes known as a "consumer chain," because it's "consuming" (or, "leasing") security from the existing network, which in turn becomes known as the "provider chain" because it's "providing" security to the new network.
-
-Cosmos commentator "Robb Stack" sums up the upcoming timeline of events for ICS's launch nicely:
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">When <a href="https://twitter.com/search?q=%24ATOM&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$ATOM</a> Interchain Security?<br><br>The ICS draft proposal has been published on the Forum in Mid-December and it is planned to go live on-chain in mid-January.<br><br>Cosmos governance requires a 2 weeks voting period.<br><br>So the proposal will receive approval the last days of January.<br><br>1/7 <a href="https://t.co/CzkaXg5BxH">pic.twitter.com/CzkaXg5BxH</a></p>&mdash; Røbb Stack ⚛️ (@RobbStack_sats) <a href="https://twitter.com/RobbStack_sats/status/1609864661981138945?ref_src=twsrc%5Etfw">January 2, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-And researcher "Thyborg" breaks down next steps for the Hub:
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The Cosmos Hub is only a few weeks away from the launch of replicated security and the introduction of the very first value-capture mechanism for <a href="https://twitter.com/search?q=%24ATOM&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$ATOM</a>. Here&#39;s a brief description of what to expect after the interchain security module is (hopefully) approved by governance 🧵</p>&mdash; Thyborg (@Thyborg_) <a href="https://twitter.com/Thyborg_/status/1612403832570642433?ref_src=twsrc%5Etfw">January 9, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-The first major step to watch will be the passage the next major upgrade for the Cosmos Hub, the "Rho" upgrade. (Chain updates often have fancy code names like this). This upgrade hasn't been put up for a formal vote yet, but the details are being [hashed out on the Cosmos Forum](https://forum.cosmos.network/t/proposal-187-accepted-v9-lambda-upgrade-with-replicated-security/8766) now.
-
-## Nakaflow Maintenance Update
-
-[Nakaflow.io](https://nakaflow.io/) is our tool for comparing the Nakamoto Coefficient for stake distribution on more than a dozen of the leading Proof-of-Stake blockchains (like Ethereum, Solana, the Cosmos Hub, and more). The Nakaflow site is currently down as we make some upgrades to the backend and user interface.
-
-We'll share an update on [Twitter](https://twitter.com/chainflowPoS) when the tool returns. We appreciate your patience in the meantime.

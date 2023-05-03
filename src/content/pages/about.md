@@ -32,16 +32,16 @@ Beyond our direct Solana contributions, which you can read about here, we lead
 efforts to increase decentralization across the staking economy. Some of our
 ongoing initiatives include:
 
-- Nakaflow.io, a watchdog resource that tracks the centralization of stake
+- [Nakaflow.io](https://nakaflow.io/), a watchdog resource that tracks the centralization of stake
   on major blockchains.
 
-- The Staking Defense League, a coalition of independent validator operators
+- [The Staking Defense League](https://stakingdefense.org/), a coalition of independent validator operators
   working together to decentralize stake on Proof-of-Stake networks.
 
-- The Validator Commons, a partnership of academics, infrastructure operators,
+- [The Validator Commons](https://validatorcommons.org/), a partnership of academics, infrastructure operators,
   and other crypto stakeholders working to define best practices for community
-  governance on blockchains Efforts to help educate, onboard, and support independent
+  governance on blockchains efforts to help educate, onboard, and support independent
   validators
 
-If you'd like to learn more about what motivates us, please read about our
-values here.
+If you'd like to learn more about what motivates us, [please read about our
+values here](/values).

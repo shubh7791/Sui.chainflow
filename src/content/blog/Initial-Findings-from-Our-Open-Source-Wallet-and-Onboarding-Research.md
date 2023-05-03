@@ -1,7 +1,7 @@
 ---
 title: "Initial Findings from Our Open-Source Wallet and Onboarding Research"
 excerpt: "Chainflow has supported Solana since the earliest testnets. In addition to running our high-performance validator, we've led a number of efforts over the years to help make Solana more secure, accessible, and decentralized."
-publishDate: "2022-10-22T16:39:36.050Z"
+publishDate: "2023-03-16T16:39:36.050Z"
 image: "https://images.unsplash.com/photo-1669060475309-33f02dc5404a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
 author: "Chris Remus"
 tags: [blockchain]
