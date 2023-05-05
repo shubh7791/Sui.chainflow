@@ -1,6 +1,4 @@
-## Solana Ecosystem Contributions
-
-### Infrastructure:
+### Infrastructure
 
 **Tour De Sol**
 

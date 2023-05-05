@@ -2,7 +2,7 @@
 title: "The Layers of Decentralization: Understanding the Accumulation of Power in the Staking Economy"
 publishDate: "2022-03-23T16:39:36.050Z"
 image: "https://hbr.org/resources/images/article_assets/2019/08/Sep19_03_1153768857.jpg"
-author: "Chris Remus"
+author: "Chainflow"
 tags: [blockchain]
 ---
 

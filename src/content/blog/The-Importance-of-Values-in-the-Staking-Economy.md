@@ -2,7 +2,7 @@
 title: "The Importance of Values in the Staking Economy"
 publishDate: "2021-06-07T16:39:36.050Z"
 image: "https://images.unsplash.com/photo-1604594849809-dfedbc827105?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-author: "Chris Remus"
+author: "Chainflow"
 tags: [blockchain]
 ---
 

@@ -2,7 +2,7 @@
 title: "Opening the Door to Freedom on Solana"
 publishDate: "2022-11-09T16:39:36.050Z"
 image: "https://coinchapter.com/wp-content/uploads/2023/04/shutterstock_2181609343-1024x576.jpg"
-author: "Chris Remus"
+author: "Chainflow"
 tags: [blockchain]
 ---
 

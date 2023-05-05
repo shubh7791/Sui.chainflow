@@ -2,7 +2,7 @@
 title: "Rich Getting Richer in Proof-of-Stake Chains"
 publishDate: "2021-02-22T16:39:36.050Z"
 image: "https://publish.one37pm.net/wp-content/uploads/2021/12/HERO-87.jpg?fit=1600%2C707"
-author: "Chris Remus"
+author: "Chainflow"
 tags: [blockchain]
 ---
 

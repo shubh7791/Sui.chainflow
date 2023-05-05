@@ -2,7 +2,7 @@
 title: "Introducing Solana Mission Control"
 publishDate: "2021-08-12T16:39:36.050Z"
 image: "https://storage.googleapis.com/graph-web/blog/Testnet-Launch@2x.jpg"
-author: "Chris Remus"
+author: "Chainflow"
 tags: [blockchain]
 ---
 

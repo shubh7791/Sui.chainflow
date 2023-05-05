@@ -2,7 +2,7 @@
 title: "Rewilding Solana"
 publishDate: "2023-04-13T16:39:36.050Z"
 image: "https://images.unsplash.com/photo-1660062993695-9c81acfaceeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c29sYW5hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-author: "Chris Remus"
+author: "Chainflow"
 tags: [blockchain]
 ---
 
