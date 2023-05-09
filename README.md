@@ -1,12 +1,6 @@
-# Astroship - Astro Starter Template 🛸
+# Chainflow - Astro Website
 
-Astroship is a starter template for startups, marketing websites & landing pages. Built with Astro, TailwindCSS & Alpine.js.
-
-This Free Template is sponsored by [Web3Templates](https://web3templates.com)
-
-## Live Demo
-
-### [https://astroship.web3templates.com/](https://astroship.web3templates.com/)
+Chainflow x Solana Website powered by [Astroship](https://astroship.web3templates.com/)
 
 ## Deploy on Vercel
 
