@@ -1,36 +1,54 @@
-name: Deploy Astro Site
+name: Deploy Astro site to Server
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches:
-      - main # Change this to your main branch
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+      - name: Install dependencies
+        run: npm install # Modify this based on your project setup
+      - name: Build with Astro
+        run: npx astro build # Modify this based on your project setup
+      - name: Archive the build
+        uses: actions/upload-artifact@v2
+        with:
+          name: astro-build
+          path: ./_astro/build
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 14 # You can specify the Node.js version you need
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    - name: Install Dependencies
-      run: npm install
+      # You can add additional steps here to configure SSH access to your server.
+      # Use the secrets for SSH_HOST, SSH_USERNAME, and SSH_KEY.
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "echo SSH configuration is successful"
 
-    - name: Build Astro Site
-      run: npm run build
-
-    - name: Copy Files to Server
-      uses: einaregilsson/sh-rsync@v3
-      with:
-        dest: ${{ secrets.SSH_USERNAME }}@${{ secrets.SERVER_IP }}:/var/www/html/
-        src: Sui.chainflow/dist/
-        args: --archive --delete --verbose --compress
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-
+      # Copy the built site to your server
+      - name: Deploy to Server
+        run: |
+          scp -r ${{ github.workspace }}/_astro/build/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/html
 
