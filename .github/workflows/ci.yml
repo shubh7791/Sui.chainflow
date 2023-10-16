@@ -25,11 +25,12 @@ jobs:
       run: npm run build
 
     - name: Copy Files to Server
-      uses: appleboy/scp-action@v0.5.1
+      uses: einaregilsson/sh-rsync@v3
       with:
-        host: ${{ secrets.SERVER_IP }}
-        username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source: "Sui.chainflow/dist" # Change this to the actual build output folder
-        target: "/var/www/html"
+        dest: ${{ secrets.SSH_USERNAME }}@${{ secrets.SERVER_IP }}:/var/www/html/
+        src: Sui.chainflow/dist/
+        args: --archive --delete --verbose --compress
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
 
