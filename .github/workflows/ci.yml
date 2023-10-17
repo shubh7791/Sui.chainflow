@@ -26,6 +26,6 @@ jobs:
 
     - name: Deploy to server
       run: |
-        scp -r ./dist/* root@165.232.190.115:/var/www/html/
+        scp -r ./dist/* :/var/www/html/
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
