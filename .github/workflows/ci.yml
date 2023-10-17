@@ -1,54 +1,31 @@
-name: Deploy Astro site to Server
+name: Build and Deploy
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches:
+      - main # Change this to the branch you want to trigger the workflow
 
 jobs:
-  build:
-    name: Build
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: "16"
-      - name: Install dependencies
-        run: npm install # Modify this based on your project setup
-      - name: Build with Astro
-        run: npx astro build # Modify this based on your project setup
-      - name: Archive the build
-        uses: actions/upload-artifact@v2
-        with:
-          name: astro-build
-          path: ./dist
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-  deploy:
-    runs-on: ubuntu-latest
-    name: Deploy
-    needs: build
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+    - name: Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14 # Change to your desired Node.js version
 
-      # You can add additional steps here to configure SSH access to your server.
-      # Use the secrets for SSH_HOST, SSH_USERNAME, and SSH_KEY.
-      - name: Configure SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t rsa ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "echo SSH configuration is successful"
+    - name: Install dependencies
+      run: npm install
 
-      # Copy the built site to your server
-      - name: Deploy to Server
-        run: |
-          scp -r ${{ github.workspace }}/dist ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/html
+    - name: Build
+      run: npm run build
 
+    - name: Deploy to server
+      run: |
+        scp -r ./dist/* root@165.232.190.115:/var/www/html/
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
