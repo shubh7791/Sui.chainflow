@@ -50,5 +50,5 @@ jobs:
       # Copy the built site to your server
       - name: Deploy to Server
         run: |
-          scp -r ${{ github.workspace }}/_astro/build/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/html
+          scp -r ${{ github.workspace }}/dist ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/html
 
