@@ -1,0 +1,5 @@
+git clone 
+npm install 
+npm build 
+sudo cp dist/* /var/www/html 
+sudo systemctl restart nginx
